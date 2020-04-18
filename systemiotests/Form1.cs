@@ -87,7 +87,8 @@ namespace systemiotests
         private void button5_Click(object sender, EventArgs e)
         {
             string Read = textBox5.Text;
-            File.ReadAllLines(Read);
+            string ReadEnd = File.ReadAllText(Read);
+            richTextBox1.Text = ReadEnd;     
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -98,6 +99,16 @@ namespace systemiotests
         }
 
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
